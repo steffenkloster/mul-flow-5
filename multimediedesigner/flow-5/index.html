@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Steffen AK - Portfolio</title>
+    {{> head}}
+  </head>
+  <body class="preload">
+    {{> navbar }} {{#> tags}}
+    <ul>
+      <li>Photoshop</li>
+      <li>Premiere Pro</li>
+      <li>HTML</li>
+      <li>CSS/Sass</li>
+      <li>JavaScript</li>
+      <li>Handlebars</li>
+    </ul>
+    {{/tags}}
+
+    <section>
+      <div class="bg-gray">
+        <div class="padding flex flex-col gap">
+          <h1 class="text-3xl">Eksamensopgave 1. semester</h1>
+          <p>
+            Min første eksamen på Multimediedesigner uddannelsen er, at skabe en
+            portfolio, ud fra hvad vi har lært, her på første semester.
+            Udformningen af portfolioen, skal kunne demonstrere mine evner inden
+            for design, visualisering og interaktionsudvikling.
+          </p>
+
+          <p>
+            Udover design og udvikling af portofolien, skal jeg også udarbejde
+            en videosekvens, som kan indgå i portfolioen, som en del af
+            præsentationen.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="bg-light-gray">
+        <div class="grid-lg-2">
+          <div class="padding flex flex-col gap">
+            <h1 class="text-3xl">Udfordringer og udvikling</h1>
+
+            <p>
+              Inden for webudvikling, er jeg meget erfaren, og har arbejdet
+              professionelt inden for faget de sidste 7 år. Men jeg har aldrig
+              været meget af en designer, eller en som planlægger sine opgaver i
+              forkøbet, så det har været de største udfordringer, ved dette
+              projekt. Udover dette, så er jeg skiftet over til at arbejde med
+              andre sprog og frameworks, så som React og Tailwind, så at lave en
+              hjemmeside på denne måde, er egentlig meget fjernt og uvant for
+              mig.
+            </p>
+
+            <p>
+              Projektet indeholder ingen serverside code, og bruger ingen
+              frameworks, men for ikke at gentage mig selv for meget, og gøre
+              det muligt at lave genanvendelige objekter, har jeg valgt at bruge
+              Sass og Handlebars til udviklingen af min side.
+            </p>
+
+            <p>
+              På billedet ved siden af, vises hvordan et normalt workflow inden
+              for webudvikling, ville se ud for mig. Det er et snippet, fra mit
+              Next.js/React projekt <b>Onyx CMS</b>.
+            </p>
+          </div>
+
+          <div class="relative">
+            <img
+              src="/flow-5/react.png"
+              alt="React kode"
+              class="object-cover absolute h-full w-full"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="bg-gray">
+        <div class="grid-lg-2 w-full">
+          <div class="color-scheme">
+            <div class="black">
+              <div>#1e1b18</div>
+              <div>black</div>
+            </div>
+            <div class="indigo">
+              <div>#6d28d9</div>
+              <div>indigo</div>
+            </div>
+            <div class="purple">
+              <div>#b512ce</div>
+              <div>purple</div>
+            </div>
+            <div class="gray">
+              <div>#e5e5eb</div>
+              <div>gray</div>
+            </div>
+            <div class="light-gray">
+              <div>#f2f2f5</div>
+              <div>light gray</div>
+            </div>
+            <div class="white">
+              <div>#fffaff</div>
+              <div>white</div>
+            </div>
+          </div>
+          <div class="padding flex flex-col gap">
+            <h1 class="text-3xl">Farver & styling</h1>
+
+            <p>
+              Jeg vil gerne give mine besøgende et venligt, casual og simpelt
+              udtryk; derfor bruger jeg begrænsede mængder af farver, for ikke
+              at overvælde brugeren. Jeg synes et firkantet, modulært look er
+              meget flot og moderne, og derfor også det jeg har brugt til min
+              portfolio.
+            </p>
+
+            <p>
+              Originalt havde jeg tænkt mig at inkludere en
+              <span class="text-blue">blå farve også</span>, men valgte at
+              droppe den igen, da det blev for mange sanseindtryk.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="bg-light-gray">
+        <div class="w-full">
+          <div class="grid-lg-2">
+            <div class="flex flex-col gap padding">
+              <h1 class="text-3xl">
+                <i class="fa-brands fa-sass"></i> Sass og CSS
+              </h1>
+
+              <p>
+                Med Sass har jeg muligheden, for at oprette mixins, som kan
+                genere kode for mig. På billedet til højre, bruger jeg for
+                eksempel en array af farver, til at oprette baggrunds- og
+                tekstfarve klasser til hver enkelte farve. Dette gør også, at
+                hvis jeg ønsker at ændre farven senere hen, så skal jeg kun
+                ændre den ét sted.
+              </p>
+
+              <p>
+                Med Sass kan jeg også forenkle hvordan jeg skriver CSS. I stedet
+                for at skrive <b>.flow-1 &gt; div</b> for eksempel, kan jeg blot
+                extende min allerede eksisterende regel for <b>.flow</b> med et
+                <b>& &gt; div</b>.
+              </p>
+            </div>
+            <div>
+              <img src="/flow-5/sass.png" alt="Sass kode" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="bg-light-gray">
+        <div class="padding gap flex flex-col">
+          <h1 class="text-3xl">Handlebars</h1>
+
+          <p>
+            Handlebars giver mig muligheden for at genbruge HTML flere steder,
+            med deres funktion <b>partials</b>. Du kan også give parametere til
+            en partial, og derved ændre hvordan den enkelte partial render.
+            Handlebars bruger jeg for eksempel til min navbar, som jeg
+            inkluderer på mine sider med et
+            <span class="mono"><span>{</span>{&gt; navbar }}</span>. Dette
+            stykke kode henter min navbar fra en fil i min partials mappe, der
+            hedder <b>navbar.hbs</b>. Hvis jeg så senere hen får lyst til at
+            ændre i min navbar, så skal jeg blot ændre i min partial fil, og
+            ændringerne bliver synlige på alle sider.
+          </p>
+
+          <p>
+            Normalt ville jeg bruge serverside kode, som for eksempel PHP's
+            <span class="mono">include()</span> funktion, eller i tilfælde af
+            React
+            <span class="mono">import Navbar from "../components/Navbar";</span>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="bg-gray">
+        <div class="padding grid-lg-2 w-full">
+          <div class="flex flex-col gap">
+            <h1 class="text-3xl">Videoproduktion</h1>
+
+            <p>
+              Nok det mest ukomfortable jeg længe har lavet. Jeg er ikke meget
+              for at stå foran et kamera, eller optage lyd, men følte videoen
+              ville blive for upersonlig, hvis jeg ikke gjorde en af delene, så
+              jeg valgte at filme mig selv, men genere voiceoveren med AI.
+            </p>
+
+            <p>
+              Stemmen er generet med
+              <b
+                ><a href="https://clipchamp.com/" target="_blank" rel="noopener"
+                  >ClipChamp's</a
+                ></b
+              >
+              Text to Speech funktion, og derefter er lydklippet redigeret i
+              Audacity, for at tweake tonelejet til noget lignende mit eget,
+              samt oprette pauser.
+            </p>
+
+            <p>
+              Videoen er redigeret i Premiere Pro, hvor jeg har klippet klippene
+              sammen. Alle klippene var filmet på min iPhone 12 Pro, og af en
+              eller anden grund ekstremt overeksponeret, da de kom ind i
+              Premiere. Dette fiksede jeg, ved at bruge Premiere's
+              <b>Color Management</b> funktion, og bruge color space
+              <b>Rec. 2020</b>, og rette i farverne manuelt med
+              <b>Lumetri Color</b>.
+            </p>
+
+            <p>
+              Til sidst lavede jeg en slags skrivemaskine animation, i stil med
+              mit domænenavn. Jeg gør noget lignende i min
+              <b
+                ><a href="https://steffen.codes/" target="_blank" rel="noopener"
+                  >rigtige portofolio</a
+                ></b
+              >, hvor logoet skriver sig selv ud, og brugeren har mulighed for
+              at ændre i det, med tastaturet.
+            </p>
+          </div>
+          <div>
+            <video src="/flow-5/video.mp4" type="video/mp4" controls></video>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="github">
+      <div class="bg-light-gray">
+        <div class="padding flex w-full gap">
+          <div class="text-2xl">Se koden på Github</div>
+          <a
+            title="Github link"
+            href="https://github.com/steffenkloster/mul-flow-5"
+            target="_blank"
+            rel="noopener"
+          >
+            <button class="bg-black text-white" type="button">
+              <i class="fa-brands fa-github"></i> Github repo
+            </button>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    {{> footer}}
+    <script type="module" src="/assets/js/main.js"></script>
+    <script type="module" src="/assets/js/flow-1.js"></script>
+  </body>
+</html>

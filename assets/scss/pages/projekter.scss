@@ -1,0 +1,20 @@
+body.projekter {
+  section {
+    > div {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+    }
+
+    h1 {
+      display: flex;
+      gap: 0.5rem;
+      font-size: 2rem;
+      white-space: pre;
+
+      img {
+        height: 3rem;
+      }
+    }
+  }
+}

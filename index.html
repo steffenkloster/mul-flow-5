@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Steffen AK - Portfolio</title>
+    {{> head}}
+  </head>
+  <body class="preload">
+    {{> navbar }}
+    <section class="hero">
+      <div>
+        <div>
+          <div class="flex">
+            <img src="/waving-hand.png" alt="Emoji hånd der vinker" />
+            <div>
+              <div class="text-xl">Halløjsa! Mit navn er</div>
+              <h1><span>Steffen Andreas</span> <span>(he/him)</span></h1>
+              <div class="text-base text-left">
+                Jeg arbejder til dagligt som webudvikler, og studerer
+                Multimediedesigner på mit 1. semester. Tjek mine undersider ud,
+                for at se mit forløb på uddannelsen, samt arbejde og projekter.
+              </div>
+
+              <div class="buttons">
+                <button type="button" class="open-video">
+                  Videopræsentation
+                </button>
+                <a href="/multimediedesigner/flow-5/index.html">
+                  <button type="button">Portfolioudvikling</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <img src="/me.png" alt="Potrætbillede" />
+        </div>
+      </div>
+    </section>
+
+    <div class="video-overlay">
+      <div>
+        <video
+          src="/flow-5/video.mp4"
+          type="video/mp4"
+          width="800"
+          controls
+        ></video>
+        <div class="close-video">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+      </div>
+    </div>
+
+    {{> footer}}
+    <script type="module" src="/assets/js/main.js"></script>
+  </body>
+</html>

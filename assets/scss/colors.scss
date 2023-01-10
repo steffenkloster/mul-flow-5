@@ -1,0 +1,35 @@
+@use "sass:map";
+
+$colors: (
+  "indigo": #6d28d9,
+  "purple": #b512ce,
+  "blue": #3e92cc,
+  "white": #fffaff,
+  "gray": #e5e5eb,
+  "light-gray": #f2f2f5,
+  "black": #1e1b18,
+  "lime": #00ff00,
+  "snow": #fff,
+  "forest": #2a602b,
+);
+
+@mixin color-modifiers($attribute: "color") {
+  @each $name, $hex in $colors {
+    &-#{$name} {
+      #{$attribute}: $hex;
+    }
+  }
+}
+
+.bg {
+  @include color-modifiers($attribute: "background-color");
+}
+
+.text {
+  @include color-modifiers($attribute: "color");
+}
+
+@mixin bg-color($color-key) {
+  $color: map.get($colors, $color-key);
+  background-color: $color;
+}

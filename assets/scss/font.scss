@@ -1,0 +1,66 @@
+@use "sass:map";
+
+$font-sizes: (
+  xs: (
+    0.75,
+    1,
+  ),
+  sm: (
+    0.875,
+    1.25,
+  ),
+  base: (
+    1,
+    1.5,
+  ),
+  lg: (
+    1.125,
+    1.75,
+  ),
+  xl: (
+    1.25,
+    1.75,
+  ),
+  2xl: (
+    1.5,
+    2,
+  ),
+  3xl: (
+    1.875,
+    2.25,
+  ),
+  4xl: (
+    2.25,
+    2.5,
+  ),
+  5xl: (
+    3,
+    1,
+  ),
+);
+
+@each $name, $size in $font-sizes {
+  .text-#{$name} {
+    font-size: nth($size, 1) + rem;
+    //line-height: nth($size, 2);
+  }
+}
+
+@mixin text-size($size-key) {
+  $size: map.get($font-sizes, $size-key);
+  font-size: nth($size, 1) + rem;
+  //line-height: nth($size, 2);
+}
+
+// @mixin size-modifiers() {
+//   @each $name, $size in $font-sizes {
+//     &-#{$name} {
+//       font-size: nth($size, 1) + rem;
+//       line-height: nth($size, 2);
+//     }
+//   }
+// }
+
+// .text {
+//   @include size-modifiers();
+// }

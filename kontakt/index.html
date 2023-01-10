@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Steffen AK - Portfolio</title>
+    {{> head}}
+  </head>
+  <body class="preload">
+    {{> navbar }}
+
+    <section>
+      <div class="grid-lg-2">
+        <div class="bg-gray">
+          <div class="contact gap">
+            <h1 class="text-3xl">Kontaktinformationer</h1>
+
+            <p>
+              Fang mig på email, hvis du gerne vil være pennevenner, LinkedIn
+              hvis du er interesseret i at give mig penge, eller GitHub, hvis vi
+              skal være partners in code.
+            </p>
+
+            <div class="flex flex-col">
+              <a href="mailto:steffenakloster@gmail.com">
+                <i class="fa-solid fa-envelope"></i>
+                <span>steffenakloster@gmail.com</span>
+              </a>
+
+              <a
+                href="https://www.linkedin.com/in/steffen-andreas-kloster-35b6a6143/"
+                target="_blank"
+                rel="noopener"
+              >
+                <i class="fa-brands fa-linkedin"></i>
+                <span>Steffen Andreas Kloster</span>
+              </a>
+
+              <a
+                href="https://github.com/steffenkloster"
+                target="_blank"
+                rel="noopener"
+              >
+                <i class="fa-brands fa-github"></i>
+                <span>steffenkloster</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="bg-gray">
+          <form
+            class="padding flex flex-col gap"
+            action="https://formsubmit.co/steffenakloster@gmail.com"
+            method="POST"
+          >
+            <h1 class="text-3xl">Eller udfyld formularen!</h1>
+            <input type="text" name="name" placeholder="Navn" />
+            <input type="email" name="email" placeholder="E-mail" />
+            <textarea
+              title="Besked"
+              name="message"
+              placeholder="Besked .."
+            ></textarea>
+            <button type="submit" class="bg-snow">Send besked</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    {{> footer}}
+    <script type="module" src="/assets/js/main.js"></script>
+  </body>
+</html>

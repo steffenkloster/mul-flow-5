@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Steffen AK - Portfolio</title>
+    {{> head}}
+  </head>
+  <body class="preload projekter">
+    {{> navbar }}
+
+    <section>
+      <div>
+        <div class="bg-gray">
+          <div class="padding flex flex-col gap">
+            <h1><img src="/onyx.svg" alt="Onyx" /> Onyx CMS</h1>
+            <div class="flex gap">
+              <a
+                href="http://vsa.server.steffen.codes/"
+                target="_blank"
+                rel="noopener"
+              >
+                <button type="button">
+                  <i class="fa-brands fa-chrome"></i> Live version
+                </button>
+              </a>
+
+              <button type="button" disabled>
+                <i class="fa-brands fa-github"></i> Github
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-gray">
+          <div class="padding flex flex-col gap">
+            <h1>Minesweeper XP</h1>
+            <div class="flex gap">
+              <a
+                href="https://minesweeper.server.steffen.codes/"
+                target="_blank"
+                rel="noopener"
+              >
+                <button type="button">
+                  <i class="fa-brands fa-chrome"></i> Live version
+                </button>
+              </a>
+
+              <a
+                href="https://github.com/steffenkloster/minesweeper"
+                target="_blank"
+                rel="noopener"
+              >
+                <button type="button">
+                  <i class="fa-brands fa-github"></i> Github
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-gray">
+          <div class="padding flex flex-col gap">
+            <h1>Webshell Mockup</h1>
+            <div class="flex gap">
+              <a
+                href="https://server.steffen.codes/"
+                target="_blank"
+                rel="noopener"
+              >
+                <button type="button">
+                  <i class="fa-brands fa-chrome"></i> Live version
+                </button>
+              </a>
+
+              <a
+                href="https://github.com/steffenkloster/shell-mockup"
+                target="_blank"
+                rel="noopener"
+              >
+                <button type="button">
+                  <i class="fa-brands fa-github"></i> Github
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {{> footer}}
+    <script type="module" src="/assets/js/main.js"></script>
+  </body>
+</html>

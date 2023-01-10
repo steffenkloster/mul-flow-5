@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Steffen AK - Portfolio</title>
+    {{> head}}
+  </head>
+  <body class="preload multimediedesigner flow-2">
+    {{> navbar }} {{#> tags}}
+    <ul>
+      <li>Illustrator</li>
+      <li>Photoshop</li>
+      <li>Figma</li>
+    </ul>
+    {{/tags}}
+
+    <section>
+      <div class="bg-black text-white padding flex justify-center">
+        <img src="/flow-2/breathe-again-logo.png" alt="" />
+      </div>
+    </section>
+
+    <section class="">
+      <div class="bg-gray grid-lg-2">
+        <div class="padding">
+          <p>
+            I Flow 2 skulle vi forestille os, at vi var et lille designstudie,
+            der er blevet bedt om at lave et visuelt materiale til en
+            musikudgivelse. Vi skulle vælge en eksisterende kunstner, og med
+            inspiration fra tidligere udgivelser, skabe et virtuelt univers, til
+            en mulig fremtidig udgivelse.
+          </p>
+
+          <p>
+            Vi valgte The Weeknd, og kunne se på tidligere udgivelser, at hans
+            musik udgivelser lignede en timeline igennem tiden, med hver
+            udgivelse bliver mere moderne. Den seneste udgivelse "Dawn FM",
+            indeholdte sangnavne så som "Take My Breath", "Out of Time" og "Less
+            than Zero". Derfor valgte vi at gå med et futuristic pop-album, med
+            navnet "Breathe Again".
+          </p>
+
+          <p>Vi skulle dække følgende opgaver:</p>
+
+          <ul>
+            <li>Lav et cover til print (LP-cover) og til streamingstjeneste</li>
+            <li>Lav et digitalt banner til promovering af albummet</li>
+            <li>
+              Lav en landingpage i Figma, hvor det er muligt at købe albummet
+              digitalt eller fysisk
+            </li>
+            <li>
+              Lav et “iframe” til streamingtjenesten, hvor man kan lytte til
+              udgivelsen på langdingpage
+            </li>
+            <li>
+              Brug det visuelle koncept til at skabe den grafiske flade på
+              landingpagen
+            </li>
+          </ul>
+        </div>
+        <div>
+          <img
+            src="/flow-2/front-cover.jpg"
+            alt="Breathe Again forside cover"
+            class="visible"
+          />
+          <img src="/flow-2/back-cover.jpg" alt="Breathe Again forside cover" />
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="bg-gray grid-lg-2">
+        <div class="relative">
+          <img
+            src="/flow-2/banner.jpg"
+            alt="Breathe Again forside cover"
+            class="object-cover h-full w-full"
+          />
+        </div>
+        <div class="padding flex gap flex-col">
+          <h1 class="text-3xl">Udviklingsprocessen</h1>
+          <p>
+            I udviklingsprocessen fik vi virkelig arbejdet med Double Diamond
+            processmodellen, som er en model inddelt i fire faser; discover,
+            define, develop, deliver. Vi startede med at samle al den
+            information om The Weeknd's udgivelser, som vi kunne. Bagefter,
+            snævrede vi informationerne sammen, valgte hvad vi ville arbejde
+            med, og leverede et produkt. Hver person i gruppen leverede hver sit
+            produkt, som vi så bagefter gjorde samme process med igen, indtil vi
+            alle var tilfredse med produkterne.
+          </p>
+
+          <h2 class="text-xl">Bannerreklame og Spotify cover</h2>
+
+          <p>
+            Til bannerreklamen valgte vi at gå en moderne vej, som mange
+            kunstnere gør for tiden, og lave et collab med en streamingtjeneste.
+            Dette hjælper til at styrke begge brands, og reducere udgifterne til
+            reklamering. Dette kan ses på vores bannerreklame, som indeholder
+            teksten "SCAN & LISTEN ON SPOTIFY", samt Spotify's egen barcode, som
+            man kan scanne inde i deres app.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="iframe">
+      <div class="bg-light-gray">
+        <div class="title bg-gray">
+          <img src="/figma.svg" alt="Figma logo" /> Konceptudvikling
+        </div>
+        <div class="iframe">
+          <div><i class="fa-solid fa-circle-notch"></i> Indlæser Figma ..</div>
+
+          <!-- Bruger x-src, så iframe ikke blokerer indlæsningen af resten af siden. src sættes med JavaScript .-->
+          <iframe
+            title="Figma konceptudvikling"
+            width="100%"
+            height="100%"
+            x-src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FdzAxbNl3yDpHDY9WzrpHRJ%2FFLOW-2.1%3Ft%3DCoLDVQ0Lb5C2BScx-1"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section class="iframe">
+      <div class="bg-light-gray">
+        <div class="title bg-gray">
+          <img src="/figma.svg" alt="Figma logo" /> Landing page
+        </div>
+        <div class="iframe">
+          <div><i class="fa-solid fa-circle-notch"></i> Indlæser Figma ..</div>
+
+          <!-- Bruger x-src, så iframe ikke blokerer indlæsningen af resten af siden. src sættes med JavaScript .-->
+          <iframe
+            title="Figma konceptudvikling"
+            width="100%"
+            height="100%"
+            x-src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FodNbs9KKVy1l0D5rhIdBmA%2FTHE-WEEKND%3Fnode-id%3D0%253A1%26t%3DCoLDVQ0Lb5C2BScx-1"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    {{> footer}}
+    <script type="module" src="/assets/js/main.js"></script>
+    <script type="module" src="/assets/js/flow-2.js"></script>
+  </body>
+</html>

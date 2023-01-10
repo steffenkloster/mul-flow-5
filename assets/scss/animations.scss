@@ -1,0 +1,29 @@
+// @keyframes bounce {
+//   80% {
+//     transform: translateY(0%);
+//   }
+//   90% {
+//     transform: translateY(-0.25rem);
+//   }
+//   100% {
+//     transform: translateY(0%);
+//   }
+// }
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(-0.25rem);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
