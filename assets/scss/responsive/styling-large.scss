@@ -187,6 +187,9 @@ section.vscode {
 .grid-lg-2 {
   grid-template-columns: repeat(2, 1fr);
   gap: 4rem;
+  &.small-gap {
+    gap: 1rem;
+  }
 }
 
 .flow-2 {
