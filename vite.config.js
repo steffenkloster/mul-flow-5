@@ -12,6 +12,8 @@ export default {
         flow2: resolve(__dirname, "multimediedesigner/flow-2/index.html"),
         flow3: resolve(__dirname, "multimediedesigner/flow-3/index.html"),
         flow4: resolve(__dirname, "multimediedesigner/flow-4/index.html"),
+        flow5: resolve(__dirname, "multimediedesigner/flow-5/index.html"),
+        kontakt: resolve(__dirname, "kontakt/index.html"),
         projekter: resolve(__dirname, "projekter/index.html"),
       },
     },
